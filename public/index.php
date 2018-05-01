@@ -11,12 +11,12 @@ try {
 	
 
 } catch (PDOException  $e) {
-    echo $e->getTraceAsString();     
+    // echo $e->getTraceAsString();     
     exit('Error with database 40');
     
 } catch (Exception $exc) {
-    echo $exc->getTraceAsString();     
-    // error_log('Exception: ' . $exc->getMessage() . ' in file ' . $exc->getFile() . ' on line ' . $exc->getLine());
+    // echo $exc->getTraceAsString();     
+    error_log('Exception: ' . $exc->getMessage() . ' in file ' . $exc->getFile() . ' on line ' . $exc->getLine());
      
 } 
 
