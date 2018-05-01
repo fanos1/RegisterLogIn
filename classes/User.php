@@ -113,8 +113,8 @@ class User {
         // return TRUE;
         
         $confirmationURL = '
-          <a href="https://www.dobaln.co.uk/signup.php?code='.$confirmCode.'"> 
-              https://www.dobaln.co.uk/signup.php?code='.$confirmCode.'
+          <a href="https://www.example.co.uk/signup.php?code='.$confirmCode.'"> 
+              https://www.example.co.uk/signup.php?code='.$confirmCode.'
           </a>';
         
         $mail = new PHPMailer;
